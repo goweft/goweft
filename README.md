@@ -12,7 +12,7 @@ AI agents ship code, consume tools, fork codebases, persist memory across sessio
 |---|---|---|---|
 | **Pre-publish** | [**tenter**](https://github.com/goweft/tenter) | Scans packages for source maps, secrets, debug artifacts before they ship | Before `npm publish` / `pip upload` / `cargo publish` |
 | **Post-fork** | [**unshear**](https://github.com/goweft/unshear) | Detects stripped safety mechanisms, removed auth, disabled guardrails in forks | After a fork appears or a leak triggers mass cloning |
-| **Runtime** | [**heddle**](https://github.com/goweft/heddle) | Policy-and-trust layer for MCP tool servers — trust tiers, credential brokering, audit | Every tool invocation at runtime |
+| **Runtime** | [**heddle**](https://github.com/goweft/heddle) | Policy-and-trust layer for MCP tool servers — trust tiers, credential brokering, container sandboxing, audit | Every tool invocation at runtime |
 | **Across sessions** | [**ratine**](https://github.com/goweft/ratine) | Agent memory poisoning detector — injected instructions, hidden payloads, belief drift | Periodic scans of agent persistent state |
 | **In git history** | [**crocking**](https://github.com/goweft/crocking) | AI authorship detector — commit patterns, timing signals, tool markers, code style | Before merge, during audit, or on any repo |
 
