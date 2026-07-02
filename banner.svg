@@ -1,0 +1,78 @@
+<svg width="1280" viewBox="0 0 1280 420" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="goweft — security tooling for the AI agent supply chain">
+<rect x="0" y="0" width="1280" height="420" rx="12" fill="#f8f7f4"/>
+
+<!-- === LEFT ILLUSTRATION: the loom ===
+     Warp threads = the agent supply chain.
+     Five weft threads = the five tools, one per color.
+     The amber pick (crocking) is still being carried across by the shuttle. -->
+<g transform="translate(70, 30)">
+
+  <!-- Warp threads -->
+  <g stroke="#c9c6bb" stroke-width="1.5">
+    <line x1="20"  y1="20" x2="20"  y2="340"/>
+    <line x1="48"  y1="20" x2="48"  y2="340"/>
+    <line x1="76"  y1="20" x2="76"  y2="340"/>
+    <line x1="104" y1="20" x2="104" y2="340"/>
+    <line x1="132" y1="20" x2="132" y2="340"/>
+    <line x1="160" y1="20" x2="160" y2="340"/>
+    <line x1="188" y1="20" x2="188" y2="340"/>
+    <line x1="216" y1="20" x2="216" y2="340"/>
+    <line x1="244" y1="20" x2="244" y2="340"/>
+    <line x1="272" y1="20" x2="272" y2="340"/>
+    <line x1="300" y1="20" x2="300" y2="340"/>
+    <line x1="328" y1="20" x2="328" y2="340"/>
+    <line x1="356" y1="20" x2="356" y2="340"/>
+    <line x1="384" y1="20" x2="384" y2="340"/>
+  </g>
+
+  <!-- Woven weft threads: dash period spans two warps, so each pick
+       goes over one thread and under the next; alternate rows flip phase. -->
+  <!-- tenter — pre-publish -->
+  <line x1="2" y1="90"  x2="406" y2="90"  stroke="#1D9E75" stroke-width="2.5" stroke-dasharray="36 20" opacity="0.85"/>
+  <!-- unshear — post-fork -->
+  <line x1="2" y1="150" x2="406" y2="150" stroke="#c45a5a" stroke-width="2.5" stroke-dasharray="36 20" stroke-dashoffset="28" opacity="0.85"/>
+  <!-- heddle — runtime -->
+  <line x1="2" y1="210" x2="406" y2="210" stroke="#378ADD" stroke-width="2.5" stroke-dasharray="36 20" opacity="0.85"/>
+  <!-- ratine — across sessions -->
+  <line x1="2" y1="270" x2="406" y2="270" stroke="#7A6FB0" stroke-width="2.5" stroke-dasharray="36 20" stroke-dashoffset="28" opacity="0.85"/>
+
+  <!-- crocking — the fresh pick, drawn across by the shuttle -->
+  <path d="M 2 330 L 406 330" stroke="#BA7517" stroke-width="2.5" fill="none"
+        pathLength="100" stroke-dasharray="100" stroke-dashoffset="100">
+    <animate attributeName="stroke-dashoffset" values="100;0;0;100" keyTimes="0;0.6;0.96;1" dur="8s" repeatCount="indefinite"/>
+  </path>
+
+  <!-- The shuttle carrying it -->
+  <g>
+    <path d="M -17 0 Q 0 -7.5 17 0 Q 0 7.5 -17 0 Z" fill="#8a7a5f" stroke="#6e614b" stroke-width="1"/>
+    <circle r="2.5" fill="#BA7517"/>
+    <animateMotion path="M 2 330 L 406 330" keyPoints="0;1;1;0" keyTimes="0;0.6;0.96;1" calcMode="linear" dur="8s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="1;1;1;0;1" keyTimes="0;0.88;0.94;0.97;1" dur="8s" repeatCount="indefinite"/>
+  </g>
+</g>
+
+<!-- === RIGHT TYPOGRAPHY === -->
+<text x="560" y="160" font-family="system-ui, -apple-system, sans-serif" font-size="58" font-weight="500" fill="#2c2c2a" letter-spacing="-1.5">goweft</text>
+<text x="560" y="200" font-family="system-ui, -apple-system, sans-serif" font-size="21" font-weight="400" fill="#5f5e5a">security tooling for the AI agent supply chain</text>
+
+<text x="560" y="252" font-family="system-ui, -apple-system, sans-serif" font-size="14" font-weight="400" fill="#888780">pre-publish &#183; post-fork &#183; runtime &#183; across sessions &#183; in git history</text>
+
+<!-- Tool names keyed to thread colors -->
+<g font-family="system-ui, -apple-system, sans-serif" font-size="14" font-weight="400" fill="#888780">
+  <circle cx="564" cy="279" r="3.5" fill="#1D9E75"/>
+  <text x="574" y="284">tenter</text>
+  <circle cx="641" cy="279" r="3.5" fill="#c45a5a"/>
+  <text x="651" y="284">unshear</text>
+  <circle cx="732" cy="279" r="3.5" fill="#378ADD"/>
+  <text x="742" y="284">heddle</text>
+  <circle cx="812" cy="279" r="3.5" fill="#7A6FB0"/>
+  <text x="822" y="284">ratine</text>
+  <circle cx="887" cy="279" r="3.5" fill="#BA7517"/>
+  <text x="897" y="284">crocking</text>
+</g>
+
+<text x="560" y="322" font-family="system-ui, -apple-system, sans-serif" font-size="12" font-weight="400" fill="#aaa8a0">five tools &#183; zero dependencies &#183; python stdlib &#183; MIT</text>
+
+<rect x="560" y="346" width="56" height="22" rx="4" fill="#f1efe8" stroke="#d3d1c7" stroke-width="0.5"/>
+<text x="588" y="361" font-family="monospace" font-size="10" font-weight="400" fill="#888780" text-anchor="middle">goweft</text>
+</svg>

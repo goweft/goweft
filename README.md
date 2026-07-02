@@ -1,3 +1,5 @@
+<p align="center"><img src="banner.svg" alt="goweft — security tooling for the AI agent supply chain" width="100%"></p>
+
 # goweft
 
 Security tooling for the AI agent supply chain.
@@ -17,6 +19,10 @@ AI agents ship code, consume tools, fork codebases, persist memory across sessio
 | **In git history** | [**crocking**](https://github.com/goweft/crocking) | AI authorship detector — commit patterns, timing signals, tool markers, code style | Before merge, during audit, or on any repo |
 
 Each tool is zero external dependencies (Python stdlib only), MIT licensed, and independently installable.
+
+## The suite at work
+
+<p align="center"><img src="suite.svg" alt="goweft suite demo" width="100%"></p>
 
 ## Background
 
