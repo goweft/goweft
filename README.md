@@ -22,7 +22,7 @@ Each tool is zero external dependencies (Python stdlib only), MIT licensed, and 
 
 ## The suite at work
 
-<p align="center"><img src="suite.svg" alt="goweft suite demo" width="100%"></p>
+<p align="center"><img src="suite.gif" alt="goweft suite demo" width="100%"></p>
 
 ## Background
 
